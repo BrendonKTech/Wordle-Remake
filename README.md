@@ -69,7 +69,7 @@ python
 ### Author
 This was built as learning experience and fun side project. The GUI version especially was designed to mimic the layout and logic of the real Wordle game, while also exploring Tkinter features like grid layout, theming, and event handling. The overall project took me a couple of days to complete since I am a student and have other responsibilities. AI was used in addition to my own code for error analysis as well as making my code a bit cleaner and more efficient to look back on for future projects.
 
---
+---
 
 ### Feedback
 If you come into any errors or would like to contribute, open an issue or send a pull request. All improvements are welcome!
