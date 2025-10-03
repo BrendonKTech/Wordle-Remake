@@ -1,10 +1,22 @@
+import os
+import sys
 import random
 import tkinter as tk
 from tkinter import messagebox
 
+# Function to get path to resource
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller .exe """
+    try:
+        # PyInstaller sets this at runtime
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 # Word list placeholder — replace with your big list
 def load_word_list(words):
-    with open(words, "r") as f:
+    with open(resource_path(words), "r") as f:
         words = [line.strip().lower() for line in f if len(line.strip()) == 5]
     return words
 
